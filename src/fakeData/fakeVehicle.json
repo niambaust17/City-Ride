@@ -1,0 +1,114 @@
+[
+    {
+        "vehicleType": "Bike",
+        "image": "https://i.ibb.co/THLz6L2/Frame.png",
+        "price": 25,
+        "from": "Mirpur 1",
+        "to": "Dhanmondi"
+    },
+    {
+        "vehicleType": "Bike",
+        "image": "https://i.ibb.co/THLz6L2/Frame.png",
+        "price": 25,
+        "from": "Rampura",
+        "to": "New market"
+    },
+    {
+        "vehicleType": "Bike",
+        "image": "https://i.ibb.co/THLz6L2/Frame.png",
+        "price": 25,
+        "from": "Jomuna future park",
+        "to": "Sadar ghat"
+    },
+    {
+        "vehicleType": "Bike",
+        "image": "https://i.ibb.co/THLz6L2/Frame.png",
+        "price": 25,
+        "from": "Badda",
+        "to": "Dhaka university"
+    },
+    {
+        "vehicleType": "Car",
+        "image": "https://i.ibb.co/g6ZVjXK/Frame-2.png",
+        "price": 50,
+        "from": "Mirpur 1",
+        "to": "Dhanmondi"
+    },
+    {
+        "vehicleType": "Car",
+        "image": "https://i.ibb.co/g6ZVjXK/Frame-2.png",
+        "price": 50,
+        "from": "Rampura",
+        "to": "New market"
+    },
+    {
+        "vehicleType": "Car",
+        "image": "https://i.ibb.co/g6ZVjXK/Frame-2.png",
+        "price": 50,
+        "from": "Jomuna future park",
+        "to": "Sadar ghat"
+    },
+    {
+        "vehicleType": "Car",
+        "image": "https://i.ibb.co/g6ZVjXK/Frame-2.png",
+        "price": 50,
+        "from": "Badda",
+        "to": "Dhaka university"
+    },
+    {
+        "vehicleType": "Bus",
+        "image": "https://i.ibb.co/3NpwZ7P/Frame-1.png",
+        "price": 30,
+        "from": "Mirpur 1",
+        "to": "Dhanmondi"
+    },
+    {
+        "vehicleType": "Bus",
+        "image": "https://i.ibb.co/3NpwZ7P/Frame-1.png",
+        "price": 30,
+        "from": "Rampura",
+        "to": "New market"
+    },
+    {
+        "vehicleType": "Bus",
+        "image": "https://i.ibb.co/3NpwZ7P/Frame-1.png",
+        "price": 30,
+        "from": "Jomuna future park",
+        "to": "Sadar ghat"
+    },
+    {
+        "vehicleType": "Bus",
+        "image": "https://i.ibb.co/3NpwZ7P/Frame-1.png",
+        "price": 30,
+        "from": "Badda",
+        "to": "Dhaka university"
+    },
+    {
+        "vehicleType": "Train",
+        "image": "https://i.ibb.co/SPtJzwH/Group.png",
+        "price": 15,
+        "from": "Mirpur 1",
+        "to": "Dhanmondi"
+    },
+    {
+        "vehicleType": "Train",
+        "image": "https://i.ibb.co/SPtJzwH/Group.png",
+        "price": 15,
+        "from": "Rampura",
+        "to": "New market"
+    },
+    {
+        "vehicleType": "Train",
+        "image": "https://i.ibb.co/SPtJzwH/Group.png",
+        "price": 15,
+        "from": "Jomuna future park",
+        "to": "Sadar ghat"
+    },
+    {
+        "vehicleType": "Train",
+        "image": "https://i.ibb.co/SPtJzwH/Group.png",
+        "price": 15,
+        "from": "Badda",
+        "to": "Dhaka university"
+    }
+]
