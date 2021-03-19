@@ -1,0 +1,8 @@
+img {
+  width: 100%;
+}
+.user-input {
+  background: rgba(235, 123, 123, 0.562);
+  padding: 20px;
+  border-radius: 15px;
+}
