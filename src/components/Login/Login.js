@@ -22,7 +22,6 @@ const Login = () =>
     });
     const handleResponse = (res, redirect) =>
     {
-        setUser(res)
         setLoggedInUser(res)
         if (redirect)
         {
@@ -46,7 +45,7 @@ const Login = () =>
             createUserWithEmailAndPassword(user.name, user.email, user.password)
                 .then(res =>
                 {
-                    handleResponse(res, false)
+                    setUser(res)
                     updateUserInfo(user.name);
                 })
         }
@@ -55,6 +54,7 @@ const Login = () =>
             SignInUserWithEmailAndPassword(user.email, user.password)
                 .then(res =>
                 {
+                    setUser(res)
                     handleResponse(res, true)
                 })
         }
