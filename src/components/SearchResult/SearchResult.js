@@ -23,8 +23,8 @@ const SearchResult = () =>
             <div className="row">
                 <div className="col-md-5 my-3" style={{ border: '1px solid gray', padding: '25px', borderRadius: '10px' }}>
                     <div>
-                        <h5>From: {category[0].from}</h5>
-                        <h5>To: {category[0].to}</h5>
+                        <h5>From: {category[0]?.from || "Select Nothing"}</h5>
+                        <h5>To: {category[0]?.to || "Select Nothing"}</h5>
                         {
                             category.map(vehicleCategory => <SpecificVehicle key={vehicleCategory.id} vehicleCategory={vehicleCategory} />)
                         }
