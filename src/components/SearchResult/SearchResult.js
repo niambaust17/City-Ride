@@ -1,7 +1,19 @@
 import React from 'react';
 import { useParams } from 'react-router';
-import img from '../../images/Map.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUsers } from '@fortawesome/free-solid-svg-icons';
 import fakeVehicle from '../../fakeData/fakeVehicle.json';
+import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps";
+
+function Map()
+{
+    return <GoogleMap
+        defaultZoom={8}
+        defaultCenter={{ lat: 23.777176, lng: 90.399452 }}
+    ></GoogleMap>
+}
+
+const WrappedMap = withScriptjs(withGoogleMap(Map));
 
 const SearchResult = () =>
 {
@@ -10,26 +22,36 @@ const SearchResult = () =>
     console.log(category);
     return (
         <div className="container">
-            <div className="row d-flex">
-                <div className="col-md-5 my-3">
-                    <div className="row d-flex">
+            <div className="row">
+                <div className="col-md-5 my-3" style={{ border: '1px solid gray', padding: '25px', borderRadius: '10px' }}>
+                    <div className="row">
                         {
                             category.map(single =>
-                                <>
-                                    <div className="col-md-4">
-                                        <img src={single.image} alt="" />
+                                <div key={single.id} style={{ border: '1px solid orange', marginBottom: '5px', borderRadius: '10px' }}>
+                                    <div className="col-md-12 col-md-6">
+                                        <div className="row d-flex justify-content-between">
+                                            <div className="col-md-5 d-flex align-items-center">
+                                                <img src={single.image} alt="" style={{ padding: '5px' }} />
+                                            </div>
+                                            <div className="col-md-7 d-flex justify-content-evenly align-items-center">
+                                                <h5>{single.vehicleType}</h5>
+                                                <h5><FontAwesomeIcon icon={faUsers} /> {single.capacity}</h5>
+                                                <h5>${single.price}</h5>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className="col-md-8">
-                                        <h4>{single.vehicleType}</h4>
-                                        <p>${single.price}</p>
-                                    </div>
-                                </>
+                                </div>
                             )
                         }
                     </div>
                 </div>
                 <div className="col-md-7 my-3">
-                    <img src={img} alt="" />
+                    <WrappedMap
+                        googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyDZcVrcpxV9-Brb-A7hzzh1fAqVg7aKA2A`}
+                        loadingElement={<div style={{ height: `100%` }} />}
+                        containerElement={<div style={{ height: `100%` }} />}
+                        mapElement={<div style={{ height: `100%` }} />}
+                    />
                 </div>
             </div>
         </div>

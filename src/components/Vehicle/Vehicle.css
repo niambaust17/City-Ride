@@ -1,3 +1,15 @@
+.card {
+  border: none;
+  border-radius: 10px;
+}
+.card:hover {
+  box-shadow: 1px 1px 20px 5px lightgray;
+}
+.card-footer {
+  border-top: none;
+  background-color: #fff;
+  border-radius: 10px !important;
+}
 .card img {
   height: 300px;
   padding: 20px;

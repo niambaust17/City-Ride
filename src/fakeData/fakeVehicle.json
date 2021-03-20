@@ -1,114 +1,146 @@
 [
     {
+        "id": 1,
         "vehicleType": "Bike",
         "image": "https://i.ibb.co/THLz6L2/Frame.png",
         "price": 25,
         "from": "Mirpur 1",
-        "to": "Dhanmondi"
+        "to": "Dhanmondi",
+        "capacity": 2
     },
     {
+        "id": 2,
         "vehicleType": "Bike",
         "image": "https://i.ibb.co/THLz6L2/Frame.png",
         "price": 25,
         "from": "Rampura",
-        "to": "New market"
+        "to": "New market",
+        "capacity": 2
     },
     {
+        "id": 3,
         "vehicleType": "Bike",
         "image": "https://i.ibb.co/THLz6L2/Frame.png",
         "price": 25,
         "from": "Jomuna future park",
-        "to": "Sadar ghat"
+        "to": "Sadar ghat",
+        "capacity": 2
     },
     {
+        "id": 4,
         "vehicleType": "Bike",
         "image": "https://i.ibb.co/THLz6L2/Frame.png",
         "price": 25,
         "from": "Badda",
-        "to": "Dhaka university"
+        "to": "Dhaka university",
+        "capacity": 2
     },
     {
+        "id": 5,
         "vehicleType": "Car",
         "image": "https://i.ibb.co/g6ZVjXK/Frame-2.png",
         "price": 50,
         "from": "Mirpur 1",
-        "to": "Dhanmondi"
+        "to": "Dhanmondi",
+        "capacity": 4
     },
     {
+        "id": 6,
         "vehicleType": "Car",
         "image": "https://i.ibb.co/g6ZVjXK/Frame-2.png",
         "price": 50,
         "from": "Rampura",
-        "to": "New market"
+        "to": "New market",
+        "capacity": 4
     },
     {
+        "id": 7,
         "vehicleType": "Car",
         "image": "https://i.ibb.co/g6ZVjXK/Frame-2.png",
         "price": 50,
         "from": "Jomuna future park",
-        "to": "Sadar ghat"
+        "to": "Sadar ghat",
+        "capacity": 4
     },
     {
+        "id": 8,
         "vehicleType": "Car",
         "image": "https://i.ibb.co/g6ZVjXK/Frame-2.png",
         "price": 50,
         "from": "Badda",
-        "to": "Dhaka university"
+        "to": "Dhaka university",
+        "capacity": 4
     },
     {
+        "id": 9,
         "vehicleType": "Bus",
         "image": "https://i.ibb.co/3NpwZ7P/Frame-1.png",
         "price": 30,
         "from": "Mirpur 1",
-        "to": "Dhanmondi"
+        "to": "Dhanmondi",
+        "capacity": 20
     },
     {
+        "id": 10,
         "vehicleType": "Bus",
         "image": "https://i.ibb.co/3NpwZ7P/Frame-1.png",
         "price": 30,
         "from": "Rampura",
-        "to": "New market"
+        "to": "New market",
+        "capacity": 20
     },
     {
+        "id": 11,
         "vehicleType": "Bus",
         "image": "https://i.ibb.co/3NpwZ7P/Frame-1.png",
         "price": 30,
         "from": "Jomuna future park",
-        "to": "Sadar ghat"
+        "to": "Sadar ghat",
+        "capacity": 20
     },
     {
+        "id": 12,
         "vehicleType": "Bus",
         "image": "https://i.ibb.co/3NpwZ7P/Frame-1.png",
         "price": 30,
         "from": "Badda",
-        "to": "Dhaka university"
+        "to": "Dhaka university",
+        "capacity": 20
     },
     {
+        "id": 13,
         "vehicleType": "Train",
         "image": "https://i.ibb.co/SPtJzwH/Group.png",
         "price": 15,
         "from": "Mirpur 1",
-        "to": "Dhanmondi"
+        "to": "Dhanmondi",
+        "capacity": 40
     },
     {
+        "id": 14,
         "vehicleType": "Train",
         "image": "https://i.ibb.co/SPtJzwH/Group.png",
         "price": 15,
         "from": "Rampura",
-        "to": "New market"
+        "to": "New market",
+        "capacity": 40
     },
     {
+        "id": 15,
         "vehicleType": "Train",
         "image": "https://i.ibb.co/SPtJzwH/Group.png",
         "price": 15,
         "from": "Jomuna future park",
-        "to": "Sadar ghat"
+        "to": "Sadar ghat",
+        "capacity": 40
     },
     {
+        "id": 16,
         "vehicleType": "Train",
         "image": "https://i.ibb.co/SPtJzwH/Group.png",
         "price": 15,
         "from": "Badda",
-        "to": "Dhaka university"
+        "to": "Dhaka university",
+        "capacity": 40
     }
 ]

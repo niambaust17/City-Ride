@@ -20,7 +20,6 @@ const Login = () =>
         error: '',
         success: false
     });
-
     const handleResponse = (res, redirect) =>
     {
         setUser(res)
@@ -78,6 +77,9 @@ const Login = () =>
             const isPasswordValid = event.target.value.length > 6;
             const isPasswordHasNumber = /\d{1}/.test(event.target.value);
             isFormValid = isPasswordValid && isPasswordHasNumber;
+        }
+        if (event.target.name === 'confirm-password')
+        {
         }
         if (isFormValid)
         {
