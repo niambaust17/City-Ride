@@ -32,9 +32,9 @@ const Search = () =>
                 <div className="col-md-7 my-3">
                     <WrappedMap
                         googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyDZcVrcpxV9-Brb-A7hzzh1fAqVg7aKA2A`}
-                        loadingElement={<div style={{ height: `100%` }} />}
-                        containerElement={<div style={{ height: `100%` }} />}
-                        mapElement={<div style={{ height: `100%` }} />}
+                        loadingElement={<div style={{ height: `500px`, borderRadius: '10px' }} />}
+                        containerElement={<div style={{ height: `500px`, borderRadius: '10px' }} />}
+                        mapElement={<div style={{ height: `500px`, borderRadius: '10px' }} />}
                     />
                 </div>
             </div>
