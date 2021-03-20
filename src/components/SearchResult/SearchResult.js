@@ -1,9 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUsers } from '@fortawesome/free-solid-svg-icons';
 import fakeVehicle from '../../fakeData/fakeVehicle.json';
 import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps";
+import SpecificVehicle from '../SpecificVehicle/SpecificVehicle';
 
 function Map()
 {
@@ -19,33 +18,15 @@ const SearchResult = () =>
 {
     const { vehicle } = useParams();
     const category = fakeVehicle.filter(cat => cat.vehicleType === vehicle);
-    console.log(category);
     return (
         <div className="container">
             <div className="row">
                 <div className="col-md-5 my-3" style={{ border: '1px solid gray', padding: '25px', borderRadius: '10px' }}>
                     <div>
-                        <h3>Dhanmondi</h3>
-                        <h3>Rampura</h3>
-                    </div>
-                    <div className="row">
+                        <h5>From: {category[0].from}</h5>
+                        <h5>To: {category[0].to}</h5>
                         {
-                            category.map(single =>
-                                <div key={single.id} style={{ border: '1px solid orange', marginBottom: '5px', borderRadius: '10px' }}>
-                                    <div className="col-md-12 col-md-6">
-                                        <div className="row d-flex justify-content-between">
-                                            <div className="col-md-5 d-flex align-items-center">
-                                                <img src={single.image} alt="" style={{ padding: '5px' }} />
-                                            </div>
-                                            <div className="col-md-7 d-flex justify-content-evenly align-items-center">
-                                                <h5>{single.vehicleType}</h5>
-                                                <h5><FontAwesomeIcon icon={faUsers} /> {single.capacity}</h5>
-                                                <h5>${single.price}</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            )
+                            category.map(vehicleCategory => <SpecificVehicle key={vehicleCategory.id} vehicleCategory={vehicleCategory} />)
                         }
                     </div>
                 </div>
@@ -58,7 +39,7 @@ const SearchResult = () =>
                     />
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

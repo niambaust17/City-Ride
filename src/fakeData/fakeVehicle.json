@@ -40,8 +40,8 @@
         "vehicleType": "Car",
         "image": "https://i.ibb.co/g6ZVjXK/Frame-2.png",
         "price": 50,
-        "from": "Mirpur 1",
-        "to": "Dhanmondi",
+        "from": "Rampura",
+        "to": "New market",
         "capacity": 4
     },
     {
@@ -49,8 +49,8 @@
         "vehicleType": "Car",
         "image": "https://i.ibb.co/g6ZVjXK/Frame-2.png",
         "price": 50,
-        "from": "Rampura",
-        "to": "New market",
+        "from": "Mirpur 1",
+        "to": "Dhanmondi",
         "capacity": 4
     },
     {
@@ -76,8 +76,8 @@
         "vehicleType": "Bus",
         "image": "https://i.ibb.co/3NpwZ7P/Frame-1.png",
         "price": 30,
-        "from": "Mirpur 1",
-        "to": "Dhanmondi",
+        "from": "Jomuna future park",
+        "to": "Sadar ghat",
         "capacity": 20
     },
     {
@@ -94,8 +94,8 @@
         "vehicleType": "Bus",
         "image": "https://i.ibb.co/3NpwZ7P/Frame-1.png",
         "price": 30,
-        "from": "Jomuna future park",
-        "to": "Sadar ghat",
+        "from": "Mirpur 1",
+        "to": "Dhanmondi",
         "capacity": 20
     },
     {
@@ -112,8 +112,8 @@
         "vehicleType": "Train",
         "image": "https://i.ibb.co/SPtJzwH/Group.png",
         "price": 15,
-        "from": "Mirpur 1",
-        "to": "Dhanmondi",
+        "from": "Badda",
+        "to": "Dhaka university",
         "capacity": 40
     },
     {
@@ -139,8 +139,8 @@
         "vehicleType": "Train",
         "image": "https://i.ibb.co/SPtJzwH/Group.png",
         "price": 15,
-        "from": "Badda",
-        "to": "Dhaka university",
+        "from": "Mirpur 1",
+        "to": "Dhanmondi",
         "capacity": 40
     }
 ]
