@@ -12,7 +12,6 @@ import
 import { createContext, useState } from 'react';
 import NotFound from './components/NotFound/NotFound';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
-import SearchResult from './components/SearchResult/SearchResult';
 
 export const UserContext = createContext();
 
@@ -32,9 +31,6 @@ function App()
           </PrivateRoute>
           <PrivateRoute path="/home">
             <Search />
-          </PrivateRoute>
-          <PrivateRoute path="/search-result/:vehicle">
-            <SearchResult />
           </PrivateRoute>
           <Route path="/login">
             <Login />
