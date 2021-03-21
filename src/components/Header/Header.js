@@ -17,9 +17,15 @@ const Header = () =>
                         <li className="nav-item mx-3">
                             <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                         </li>
-                        <li className="nav-item mx-3">
-                            <Link className="nav-link" to="/destination">Destination</Link>
-                        </li>
+                        {
+                            loggedInUser.isSignedIn ?
+                                <li className="nav-item mx-3">
+                                    <Link className="nav-link" to="/home">Destination</Link>
+                                </li> :
+                                <li className="nav-item mx-3">
+                                    <Link className="nav-link" to="/login">Destination</Link>
+                                </li>
+                        }
                         <li className="nav-item mx-3">
                             <Link className="nav-link" to="/">Blog</Link>
                         </li>

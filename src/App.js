@@ -30,7 +30,7 @@ function App()
           <PrivateRoute path="/search/:vehicle">
             <Search />
           </PrivateRoute>
-          <PrivateRoute path="/destination">
+          <PrivateRoute path="/home">
             <Search />
           </PrivateRoute>
           <PrivateRoute path="/search-result/:vehicle">

@@ -9,14 +9,10 @@ const Vehicle = (props) =>
     const history = useHistory();
     return (
         <div className="col">
-            <div className="card">
+            <div className="card" onClick={() => history.push(`/search/${ vehicleType }`)}>
                 <img src={image} className="card-img-top" alt="..." />
-                <div className="card-body text-center">
-
-                </div>
                 <div className="card-footer text-center">
                     <h5 className="card-title">{vehicle.vehicleType}</h5>
-                    <button onClick={() => history.push(`/search/${ vehicleType }`)} className="btn btn-outline-success">Ride</button>
                 </div>
             </div>
         </div>

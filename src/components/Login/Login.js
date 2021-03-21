@@ -78,9 +78,6 @@ const Login = () =>
             const isPasswordHasNumber = /\d{1}/.test(event.target.value);
             isFormValid = isPasswordValid && isPasswordHasNumber;
         }
-        if (event.target.name === 'confirm-password')
-        {
-        }
         if (isFormValid)
         {
             const newUserInfo = { ...user };
@@ -99,7 +96,7 @@ const Login = () =>
                 <input type="email" onBlur={handleBlur} name="email" className="form-control" placeholder="Email" required autoFocus />
                 <input type="password" onBlur={handleBlur} name="password" className="form-control" placeholder="Password" required />
                 {
-                    newUser && <input type="password" onBlur={handleBlur} name="confirm-password" className="form-control" placeholder="Confirm Password" required />
+                    newUser && <input type="password" onBlur={handleBlur} name="confirm-password" className="form-control" placeholder="Confirm Password" />
                 }
                 <button className="w-100 btn btn-lg btn-outline-success mb-2" type="submit">{newUser ? 'Create an account' : 'Login'}</button>
                 <p className="text-center">{newUser ? 'Already have an account' : 'Don’t have an account'} ?
