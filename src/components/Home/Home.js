@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import fakeData from '../../fakeData/fakeData.json';
 import Vehicle from '../Vehicle/Vehicle';
+import img from '../../images/Bg.png';
 
 const Home = () =>
 {
@@ -8,13 +9,16 @@ const Home = () =>
     useEffect(() => setVehicles(fakeData), []);
 
     return (
-        <div className="container my-5">
-            <div className="row row-cols-1 row-cols-lg-4 row-cols-md-2 row-cols-sm-2 g-4">
-                {
-                    vehicles.map(vehicle => <Vehicle key={vehicle.id} vehicle={vehicle} />)
-                }
+        <div className="d-flex justify-content-center align-items-center" style={{ backgroundImage: `url(${ img })`, backgroundSize: '100% 100%', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', minHeight: '90.7vh' }}>
+            <div className="container">
+                <div className="row row-cols-1 row-cols-md-4 g-4">
+                    {
+                        vehicles.map(vehicle => <Vehicle key={vehicle.id} vehicle={vehicle} />)
+                    }
+                </div>
             </div>
         </div>
+
     );
 };
 

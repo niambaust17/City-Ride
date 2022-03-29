@@ -6,12 +6,13 @@ import Search from './components/Search/Search';
 import
 {
   BrowserRouter as Router,
-  Switch,
+  Navigate,
+  Routes,
   Route
 } from "react-router-dom";
 import { createContext, useState } from 'react';
 import NotFound from './components/NotFound/NotFound';
-import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import PrivateOutlet from './components/PrivateOutlet/PrivateOutlet';
 
 export const UserContext = createContext();
 
@@ -22,26 +23,16 @@ function App()
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
         <Header />
-        <Switch>
-          <Route path="/home">
-            <Home />
+        <Routes>
+          <Route path="/home" element={<Navigate to="/" />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/*" element={<PrivateOutlet />}>
+            <Route path="search/:vehicle" element={<Search />} />
+            <Route path="home" element={<Search />} />
           </Route>
-          <PrivateRoute path="/search/:vehicle">
-            <Search />
-          </PrivateRoute>
-          <PrivateRoute path="/home">
-            <Search />
-          </PrivateRoute>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="*">
-            <NotFound />
-          </Route>
-        </Switch>
+          <Route path="/login" element={<Login />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </Router>
     </UserContext.Provider>
   );

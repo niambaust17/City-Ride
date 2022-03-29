@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { useHistory, useLocation } from 'react-router';
+import { useNavigate, useLocation } from 'react-router';
 import { UserContext } from '../../App';
 import { createUserWithEmailAndPassword, googleSignIn, initializeSignIn, SignInUserWithEmailAndPassword, updateUserInfo } from './loginManager';
 import './Login.css';
@@ -9,7 +9,7 @@ const Login = () =>
     initializeSignIn();
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [newUser, setNewUser] = useState(false);
-    const history = useHistory();
+    const navigate = useNavigate();
     const location = useLocation();
     const { from } = location.state || { from: { pathname: "/" } };
     const [user, setUser] = useState({
@@ -25,7 +25,7 @@ const Login = () =>
         setLoggedInUser(res)
         if (redirect)
         {
-            history.replace(from);
+            navigate(from);
         }
     }
 
@@ -100,7 +100,7 @@ const Login = () =>
                 }
                 <button className="w-100 btn btn-lg btn-outline-success mb-2" type="submit">{newUser ? 'Create an account' : 'Login'}</button>
                 <p className="text-center">{newUser ? 'Already have an account' : 'Don’t have an account'} ?
-                 <span onClick={() => setNewUser(!newUser)} className="text-warning" style={{ cursor: 'pointer' }}>
+                    <span onClick={() => setNewUser(!newUser)} className="text-warning" style={{ cursor: 'pointer' }}>
                         {newUser ? ' Login' : ' Create an account'}
                     </span></p>
             </form>
