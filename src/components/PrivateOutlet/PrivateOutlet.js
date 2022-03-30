@@ -1,14 +1,13 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { Navigate, Outlet, useLocation } from 'react-router-dom';
-import { UserContext } from '../../App';
+import useAuth from '../../hooks/useAuth';
 
 
 const PrivateOutlet = () =>
 {
-    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    const { user } = useAuth();
     const location = useLocation();
-
-    return loggedInUser.email ? <Outlet /> : <Navigate to="/login" state={{ from: location }} />
+    return user.email ? <Outlet /> : <Navigate to="/login" state={{ from: location }} />
 }
 
 export default PrivateOutlet

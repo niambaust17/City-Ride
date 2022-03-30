@@ -13,6 +13,7 @@ import
 import { createContext, useState } from 'react';
 import NotFound from './components/NotFound/NotFound';
 import PrivateOutlet from './components/PrivateOutlet/PrivateOutlet';
+import AuthProvider from './context/AuthProvider';
 
 export const UserContext = createContext();
 
@@ -20,8 +21,8 @@ function App()
 {
   const [loggedInUser, setLoggedInUser] = useState({});
   return (
-    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
-      <Router>
+    // <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+    <AuthProvider>
         <Header />
         <Routes>
           <Route path="/home" element={<Navigate to="/" />} />
@@ -33,8 +34,8 @@ function App()
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </Router>
-    </UserContext.Provider>
+    </AuthProvider>
+    // </UserContext.Provider>
   );
 }
 
