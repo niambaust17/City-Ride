@@ -10,7 +10,7 @@ const Header = () =>
         <nav className="navbar sticky-top navbar-expand-lg" style={{ backgroundColor: '#94E1F5' }}>
             <div className="container">
                 <Link className="navbar-brand nav-item" to="/">City Ride</Link>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button className="custom-toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
